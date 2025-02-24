@@ -131,11 +131,11 @@ body {
   transition: all 0.5s ease-out;
 }
 #ghost{
-  mix-blend-mode:multiply ;
+  
   width: 70px;
 }
 #ghost:hover{
-  mix-blend-mode: multiply;
+  
   width: 70px;
   border-radius: 50%;
   box-shadow:inset 0 0 10px #000000, 0 0 9px #000000,inset 0 0 10px #000000, 0 0 9px #000000;
