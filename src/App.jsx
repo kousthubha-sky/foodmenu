@@ -10,13 +10,19 @@ const images = [
   "https://images.pexels.com/photos/1893555/pexels-photo-1893555.jpeg?auto=compress&cs=tinysrgb&w=600",
   "https://media.istockphoto.com/id/1399174023/photo/potato-chips-on-black.jpg?s=612x612&w=0&k=20&c=vOwGrQXXVleiFULJ6Ur7db-esbAor-GJ1i-youx9Les="
 ];
+const games = [
+  { name: "Devil Joker", description: "Explore  mysteries of card game in our food stall." },
+  { name: "Scream In Silence", description: "Uncover the secrets of the haunted mansion in this chilling adventure." },
+  { name: "Way to Heaven", description: "Race through neon-lit cityscapes in this thrilling game." },
+  { name: "Fall Of Fear", description: "cover the circle with given paper card without touching the card once placed." }
+];
 
 const App = () => {
   
   const [currentIndex, setCurrentIndex] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
   const [feedbackOpen, setFeedbackOpen] = useState(false);
-  
+  const [gamesOpen, setGamesOpen] = useState(false);
 
   
 
@@ -43,7 +49,10 @@ const App = () => {
     setFeedbackOpen(prev => !prev);
   };
   
-  
+  const toggleGames = () => {
+    setGamesOpen(prev => !prev);
+  };
+
 
 
  
@@ -74,7 +83,31 @@ const App = () => {
           ✕
         </button>
         <button onClick={toggleMenu}>Home</button>
-        
+        <button onClick={toggleGames}>Games</button>
+        {gamesOpen && (
+            <motion.div 
+              className="mt-4 p-5 bg-black border border-red-700 rounded-lg shadow-lg w-80"
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <h2 className="text-2xl font-bold text-red-600 mb-4">Horror Games</h2>
+              <div className="space-y-4">
+                {games.map((game, index) => (
+                  <div key={index} className="border-b border-red-800 pb-2">
+                    <h3 className="text-xl font-semibold text-red-400">{game.name}</h3>
+                    <p className="text-gray-300">{game.description}</p>
+                  </div>
+                ))}
+              </div>
+              <button 
+                onClick={toggleGames}
+                className="mt-4 text-red-600 hover:text-red-400"
+              >
+                Close Games
+              </button>
+            </motion.div>
+          )}
       
 
         <button onClick={toggleFeedback}>Feedback</button>
