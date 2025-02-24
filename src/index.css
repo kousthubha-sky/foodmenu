@@ -15,7 +15,10 @@ body {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-size: contain;
   color: #fff;
-  
+  width: your-desired-width; /* Example: 90% or 1200px */
+  max-width: 100%; /* Ensures it doesn't overflow viewport */
+  margin: 0 auto; /* Centers the div */
+  box-sizing: border-box; /* Includes padding/borders in width calculation */
   
   border-radius: 25px;
   
