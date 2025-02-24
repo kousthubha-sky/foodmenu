@@ -256,7 +256,7 @@ const App = () => {
               alt="Special 3"
               className="rounded-lg shadow-lg mb-4 mask"
             />
-            <h3 className="text-2xl font-bold">Tender Coconut</h3>
+            <h3 className="text-2xl font-bold">Guava Ghost</h3>
             <p className="text-lg">₹20.00</p>
           
           </div>
