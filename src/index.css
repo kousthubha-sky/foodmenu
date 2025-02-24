@@ -163,5 +163,10 @@ body {
   box-shadow: inset 0 0 10px #000000, 0 0 9px #000000,inset 0 0 10px #000000, 0 0 9px #000000;
 }
 
-
+/*games*/
+/* Add this to your CSS */
+.horror-theme .game-item:hover {
+  transform: translateX(5px);
+  transition: transform 0.3s ease;
+}
   
