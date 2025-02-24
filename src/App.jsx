@@ -60,7 +60,7 @@ const App = () => {
     <div className="horror-theme">
       <header className="flex justify-between items-center p-6">
         <div className="text-3xl font-bold">
-          <img id="ghost" src="src/download.png" alt="" />
+          <img id="ghost" src="https://cdn.inspireuplift.com/uploads/images/seller_products/32849/1704014341_codghosticon.png" alt="" />
         </div>
         <nav className="space-x-8 text-lg flex items-center ">
           <a href="#" className="hover:text-gray-400 mr-10">
