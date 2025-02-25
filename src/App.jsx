@@ -12,8 +12,8 @@ const images = [
 ];
 const games = [
   { name: "Devil Joker", description: "Explore  mysteries of card game in our food stall." },
-  { name: "Scream In Silence", description: "Uncover the secrets of the haunted mansion in this chilling adventure." },
-  { name: "Way to Heaven", description: "Race through neon-lit cityscapes in this thrilling game." },
+  { name: "Scream In Silence", description: "Uncover the wavy way with current" },
+  { name: "Way to Heaven", description: "Race through cityscapes in this thrilling game with a die." },
   { name: "Fall Of Fear", description: "cover the circle with given paper card without touching the card once placed." }
 ];
 
